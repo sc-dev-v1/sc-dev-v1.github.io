@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>camera.scgvo.ru</title>
+    <!-- <link rel="icon" href=""> -->
+    <link rel="ICON" href="image/br_logo.png">
+    <!--  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <h1>Камеры Безопасного региона</h1>
+        <div class="container_buttons">
+            <div>
+                <input id="color-input1" type="button" value="Волгоград" onmousedown="viewDiv1()">
+                <input id="color-input2" type="button" value="Волжский" onmousedown="viewDiv2()">
+
+                <input class="search" type="text" id="Search" onkeyup="myFunctionSearch()" placeholder="Поиск камеры..">
+
+            </div>
+            <div>
+                <input id="color-input3" type="button" value="Авторизация на сайте" onmousedown="viewDiv3()">
+            </div>
+        </div>
+        <div id="Log_in">
+            <div class="info">
+                <p><b>ВНИМАНИЕ!<br> Для использования функционала камер необходимо авторизоваться: <a
+                            href="http://camera.volganet.ru/" target="_blank">ссылка</a></b><br>
+                    <!-- <b>Для этого скопируйте ссылку в браузер:</b> https://camera.volganet.ru/<br> -->
+                    <b>Логин:</b> d_korostelev<br>
+                    <b>Пароль:</b> NmAK4a
+                </p>
+            </div>
+        </div>
+        <div id="Volgograd">
+            <div class="container">
+                <div class="camera_block">
+                    <h3>93.ООТ "Комсомольская" в сторону Краснооктябрьского"</h3>
+                    <a href="http://camera.volganet.ru/api/v1/cameras/822/mp4/live" target="_blank"><img
+                            src="image/Камеры Волгограда/93.ООТ Комсомольская в сторону Краснооктябрьского.png"
+                            alt="93.ООТ &#34;Комсомольская&#34; в сторону Краснооктябрьского"></a>
+                </div>
+                <div class="camera_block">
+                    <h3>94.Комсомольская перекресток</h3>
+                    <a href="http://camera.volganet.ru/api/v1/cameras/821/mp4/live" target="_blank"><img
+                            src="image/Камеры Волгограда/94.Комсомольская перекресток.png"
+                            alt="94.Комсомольская перекресток"></a>
+                </div>
+                <div class="camera_block">
+                    <h3>551.Комсомольская остров</h3>
+                    <a><img src="image/Not find.png" alt="551.Комсомольская остров"></a>
+                </div>
+                <div class="camera_block">
+                    <h3>9556.Комсомольская в сторону Ж/Д моста PTZ</h3>
+                    <a><img src="image/Not find.png" alt="556.Комсомольская в сторону Ж/Д моста PTZ"></a>
+                </div>
+                <div class="camera_block">
+                    <h3>575.Комсомольская- Советская PTZ</h3>
+                    <a href="http://camera.volganet.ru/api/v1/cameras/1238/mp4/live" target="_blank"><img
+                            src="image/Камеры Волгограда/575.Комсомольская- Советская PTZ.png"
+                            alt="575.Комсомольская- Советская PTZ"></a>
+                </div>
+                <div class="camera_block">
+                    <h3>1542.ИТОП Комсомольская в сторону Красноармейского</h3>
+                    <a href="http://camera.volganet.ru/api/v1/cameras/768/mp4/live" target="_blank"><img
+                            src="image/Камеры Волгограда/1542.ИТОП Комсомольская в сторону Красноармейского.png"
+                            alt="1542.ИТОП Комсомольская в сторону Красноармейского"></a>
+                </div>
+                <div class="camera_block">
+                    <h3>1547.ИТОП Комсомольская в сторону ГЭС</h3>
+                    <a href="http://camera.volganet.ru/api/v1/cameras/763/mp4/live" target="_blank"><img
+                            src="image/Камеры Волгограда/1547.ИТОП Комсомольская в сторону ГЭС.png"
+                            alt="1547.ИТОП Комсомольская в сторону ГЭС"></a>
+                </div>
+                <div class="camera_block">
+                    <h3>8600.Верхняя терраса Набережной-23</h3>
+                    <a href="http://camera.volganet.ru/api/v1/cameras/3628/mp4/live" target="_blank"><img
+                            src="image/Камеры Волгограда/8600.Верхняя терраса Набережной-23.png"
+                            alt="8600.Верхняя терраса Набережной-23"></a>
+                </div>
+                <div class="camera_block">
+                    <h3>8600.Верхняя терраса Набережной-26</h3>
+                    <a href="http://camera.volganet.ru/api/v1/cameras/3631/mp4/live" target="_blank"><img
+                            src="image/Камеры Волгограда/8600.Верхняя терраса Набережной-26.png"
+                            alt="8600.Верхняя терраса Набережной-26"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Volgskiy">
+            <div class="container">
+                <div class="camera_block">
+                    <h3>ИТОП Площадь им. В.И. Ленина (в сторону Ср. Ахтубы) пр. им. Ленина, 84а</h3>
+                    <a><img src="image/Not find.png"
+                            alt="ИТОП Площадь им. В.И. Ленина (в сторону Ср. Ахтубы)пр. им. Ленина, 84а" width="400px"
+                            height="250px"></a>
+                </div>
+                <div id="cam" class="camera_block">
+                    <h3>132.0.Сталинградская, д. 6 (1)</h3>
+                    <a href="http://camera.volganet.ru/api/v1/cameras/1645/mp4/live" target="_blank"><img
+                            src="image/Камеры Волжского/132.0.Сталинградская, д. 6 (1).png"
+                            alt="132.0.Сталинградская, д. 6 (1)" width="400px" height="250px"></a>
+                </div>
+                <div class="camera_block">
+                    <h3>ИТОП Площадь им. В.И. Ленина (в сторону Ср. Ахтубы)пр. им. Ленина, 84а</h3>
+                    <a><img src="image/Not find.png"
+                            alt="ИТОП Площадь им. В.И. Ленина (в сторону Ср. Ахтубы)пр. им. Ленина, 84а" width="400px"
+                            height="250px"></a>
+                </div>
+                <div class="camera_block">
+                    <h3>133.0.Сталинградская, д. 6 (2)</h3>
+                    <a href="http://camera.volganet.ru/api/v1/cameras/1646/mp4/live" target="_blank"><img
+                            src="image/Камеры Волжского/133.0.Сталинградская, д. 6 (2).png"
+                            alt="133.0.Сталинградская, д. 6 (2)" width="400px" height="250px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function viewDiv1() {
+            document.getElementById("Volgograd").style.display = "block";
+            document.getElementById("Volgskiy").style.display = "none";
+            document.getElementById("Log_in").style.display = "none";
+
+            document.getElementById("color-input1").style.color = "#ffffff"
+            document.getElementById("color-input2").style.color = "#000"
+            document.getElementById("color-input3").style.color = "#000"
+            document.getElementById("color-input1").style.background = "rgb(49, 70, 139)";
+            document.getElementById("color-input2").style.background = "hsl(225, 19%, 92%)";
+            document.getElementById("color-input3").style.background = "hsl(225, 19%, 92%)";
+        };
+        function viewDiv2() {
+            document.getElementById("Volgskiy").style.display = "block";
+            document.getElementById("Volgograd").style.display = "none";
+            document.getElementById("Log_in").style.display = "none";
+            document.getElementById("color-input1").style.color = "#000"
+            document.getElementById("color-input2").style.color = "#ffffff"
+            document.getElementById("color-input3").style.color = "#000"
+            document.getElementById("color-input1").style.background = "hsl(225, 19%, 92%)";
+            document.getElementById("color-input2").style.background = "rgb(49, 70, 139)";
+            document.getElementById("color-input3").style.background = "hsl(225, 19%, 92%)";
+        };
+        function viewDiv3() {
+            document.getElementById("Log_in").style.display = "block";
+            document.getElementById("Volgograd").style.display = "none";
+            document.getElementById("Volgskiy").style.display = "none";
+            document.getElementById("color-input1").style.color = "#000"
+            document.getElementById("color-input2").style.color = "#000"
+            document.getElementById("color-input3").style.color = "#ffffff"
+            document.getElementById("color-input1").style.background = "hsl(225, 19%, 92%)";
+            document.getElementById("color-input2").style.background = "hsl(225, 19%, 92%)";
+            document.getElementById("color-input3").style.background = "rgb(49, 70, 139)";
+        };
+
+        function myFunctionSearch() {
+            var input = document.getElementById("Search");
+            var filter = input.value.toLowerCase();
+            var nodes = document.getElementsByClassName('camera_block');
+
+            for (i = 0; i < nodes.length; i++) {
+                if (nodes[i].innerText.toLowerCase().includes(filter)) {
+                    nodes[i].style.display = "block";
+                } else {
+                    nodes[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <!-- <iframe src="http://camera.volganet.ru/">
+
+    </iframe> -->
+</body>
+
+</html>
