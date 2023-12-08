@@ -6,8 +6,8 @@
     <title>camera.scgvo.ru</title>
     <!-- <link rel="icon" href=""> -->
     <link rel="ICON" href="image/br_logo.png">
-    <!--  -->
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
@@ -18,8 +18,8 @@
                 <input id="color-input1" type="button" value="Волгоград" onmousedown="viewDiv1()">
                 <input id="color-input2" type="button" value="Волжский" onmousedown="viewDiv2()">
 
-                <input class="search" type="text" id="Search" onkeyup="myFunctionSearch()" placeholder="Поиск камеры..">
-
+                <input id="search" class="search" type="text" id="Search" onkeyup="myFunctionSearch()"
+                    placeholder="Поиск камеры..">
             </div>
             <div>
                 <input id="color-input3" type="button" value="Авторизация на сайте" onmousedown="viewDiv3()">
@@ -125,7 +125,7 @@
             document.getElementById("Volgograd").style.display = "block";
             document.getElementById("Volgskiy").style.display = "none";
             document.getElementById("Log_in").style.display = "none";
-
+            document.getElementById("search").style.display = "inline";
             document.getElementById("color-input1").style.color = "#ffffff"
             document.getElementById("color-input2").style.color = "#000"
             document.getElementById("color-input3").style.color = "#000"
@@ -137,6 +137,7 @@
             document.getElementById("Volgskiy").style.display = "block";
             document.getElementById("Volgograd").style.display = "none";
             document.getElementById("Log_in").style.display = "none";
+            document.getElementById("search").style.display = "inline";
             document.getElementById("color-input1").style.color = "#000"
             document.getElementById("color-input2").style.color = "#ffffff"
             document.getElementById("color-input3").style.color = "#000"
@@ -148,6 +149,7 @@
             document.getElementById("Log_in").style.display = "block";
             document.getElementById("Volgograd").style.display = "none";
             document.getElementById("Volgskiy").style.display = "none";
+            document.getElementById("search").style.display = "none";
             document.getElementById("color-input1").style.color = "#000"
             document.getElementById("color-input2").style.color = "#000"
             document.getElementById("color-input3").style.color = "#ffffff"
@@ -170,9 +172,18 @@
             }
         }
     </script>
-    <!-- <iframe src="http://camera.volganet.ru/">
+    <!-- <iframe width="568" height="160" src="https://camera.volganet.ru/"></iframe> -->
 
-    </iframe> -->
+
+    <!-- <video name="media">
+        <source src="https://camera.volganet.ru/api/v1/cameras/1238/mp4/live" type="video/mp4">
+    </video> -->
+
+    <!-- <div style="height: 512px; width: 910px; left: 0px; top: 153px;">
+        <video autoplay="" type="video/mp4" src="https://camera.volganet.ru/api/v1/cameras/1238/mp4/live"
+            style="height: 512px; width: 910px;">
+        </video>
+    </div>    -->
 </body>
 
 </html>
